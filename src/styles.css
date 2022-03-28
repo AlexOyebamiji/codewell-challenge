@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  background-color: black;
+  height: 90px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: beige;
+}
+
+button {
+  background-color: yellow;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: #ffffff;
+}
+
+.navbar ul {
+  display: block;
+}
+
+.navbar ul li {
+  margin-top: 20px;
+}
+
+.ham {
+  position: fixed;
+  left: 5%;
+  width: 90%;
+  background-color: #333;
+  text-align: center;
+  top: 4rem;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-color: black;
+}
+
+h1,
+p {
+  color: #ffffff;
+}
+
+.header h1 {
+  margin-bottom: 15px;
+}
+
+.logos {
+  background-color: black;
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+
+.logos .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 1rem;
+  height: auto;
+  padding: 0 30px;
+}
+
+.project {
+  background-color: black;
+}
+
+.project h1,
+p {
+  margin-top: 15px;
+}
+
+.project p {
+  padding-bottom: 40px;
+}
+
+.project .container img {
+  width: 100%;
+}
+
+.bio {
+  background-color: #2e3038;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact {
+  background-color: black;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.footer {
+  background-color: #2e3038;
+}
+
+.footer .logo {
+  color: white;
+}
+
+.footer .container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .container .foot {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Tablet mode */
+@media screen and (min-width: 768px) {
+  .navbar .container img {
+    display: unset;
+  }
+
+  .hidden {
+    visibility: hidden;
+    opacity: unset;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .container img {
+    display: none;
+  }
+
+  .hidden {
+    visibility: unset;
+    opacity: unset;
+  }
+
+  .ham {
+    position: unset;
+    left: unset;
+    width: unset;
+    background-color: unset;
+    width: unset;
+    text-align: unset;
+    top: unset;
+  }
+
+  .navbar .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .container .ham {
+    display: flex;
+  }
+
+  .navbar .container .ham .nav {
+    display: flex;
+    gap: 2rem;
+    margin: 0 12rem;
+    width: 100%;
+  }
+
+  .navbar .container .ham .btn {
+    display: flex;
+    width: 100%;
+  }
+
+  .header .container .width h1 {
+    width: 40%;
+  }
+
+  .header .container .width p {
+    width: 55%;
+  }
+
+  .logos .container {
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .project .container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .project .container .pro img {
+    width: 90%;
+  }
+  .project .container .wid img {
+    width: 97%;
+  }
+
+  .project .container .pro p {
+    width: 80%;
+  }
+
+  .project .container .wid p {
+    width: 82%;
+  }
+
+  .bio .container {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .contact .container p {
+    width: 30%;
+  }
+
+  .logos .container {
+    padding: 0 50px;
+  }
+
+  .footer .container {
+    height: 60px;
+  }
+}
